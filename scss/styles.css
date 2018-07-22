@@ -1,14 +1,9 @@
 /*-- Global Styles --*/
 @fontface {
   font-family: 'Altero-Regular';
-  src: url(Altero-Regular.otf);
-}
-
+  src: url(Altero-Regular.otf); }
 a {
-  text-decoration: none;
-}
-
-
+  text-decoration: none; }
 
 /*-- Navigation Styles --*/
 .logo {
@@ -19,46 +14,25 @@ a {
   text-shadow: 1px .5px #E07778;
   position: absolute;
   top: 2vh;
-  left: 2vw;
-}
-.logo:hover {
-
-}
-
-
-
-
-
-
+  left: 2vw; }
 
 /*---Media Queries --*/
 @media (min-width: 992px) {
   .container_img, img.img-fluid {
-    display: none;
-  }
-}
+    display: none; } }
 @media (max-width: 992px) {
-    .container_img {
-      background-image: url(images/doggo.jpg);
-    }
-    .menu {
-      position: absolute;
-      background: transparent;
-      font-size: 1.75rem;
-      top: 1vh;
-      right: 1vw;
-    }
-    .menu:hover {
-      color: red;
-    }
-  }
-@media (max-width: 768px) {
+  .container_img {
+    background-image: url(images/doggo.jpg); }
 
-}
-@media (max-width: 576px) {
+  .menu {
+    position: absolute;
+    background: transparent;
+    font-size: 1.75rem;
+    top: 1vh;
+    right: 1vw; }
 
-}
-
+  .menu:hover {
+    color: red; } }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -75,3 +49,5 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+/*# sourceMappingURL=styles.css.map */
