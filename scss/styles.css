@@ -32,7 +32,10 @@ a {
     right: 1vw; }
 
   .menu:hover {
-    color: red; } }
+    color: #77CBF0; }
+
+  #desktop-slider, .desktop-heading {
+    display: none; } }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
