@@ -5,7 +5,35 @@
 a {
   text-decoration: none; }
 
+/*-- Title Styles --*/
+.site-title {
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 2em;
+  color: #E07778;
+  text-shadow: 1.5px 1px #77CBF0;
+  position: absolute;
+  top: .5vh;
+  left: .5vw; }
+
+/*-- Carousel Styles --*/
+#desktop-slider {
+  position: relative;
+  height: 65vh; }
+
 /*-- Navigation Styles --*/
+.desktop-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline;
+  font-family: 'Altero-Regular'; }
+
+a.nav-link {
+  color: #E07778; }
+
+a.nav-link:hover {
+  color: #77CBF0; }
+
 .logo {
   font-family: 'Altero-Regular', sans-serif;
   font-size: 2rem;
