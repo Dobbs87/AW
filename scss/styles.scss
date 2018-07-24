@@ -14,6 +14,7 @@ h3 {
   color: #E07778;
   text-shadow: 1.5px 1px #77CBF0;
 }
+
 /*-- Title Styles --*/
 .site-title {
   font-family: 'Altero-Regular', sans-serif;
@@ -28,9 +29,12 @@ h3 {
 /*-- Carousel Styles --*/
 #desktop-slider {
   position: relative;
-  height: 50vh;
+  height: 102vh;
 }
-
+.carousel-item > .slide_1, .slide_2, .slide_3 {
+  object-fit: cover;
+  height: 102vh;
+}
 
 /*-- Navigation Styles --*/
 .desktop-nav {
@@ -39,8 +43,6 @@ h3 {
   right: 0;
   display: inline;
   font-family: 'Altero-Regular';
-  // color: #E07778;
-  // text-shadow: 1.5px 1px #77CBF0;
 }
 a.nav-link {
   color: #E07778;
@@ -50,7 +52,7 @@ a.nav-link:hover {
 }
 
 
-
+/*-- Logo Styles --*/
 
 .logo {
   font-family: 'Altero-Regular', sans-serif;
@@ -63,7 +65,8 @@ a.nav-link:hover {
   left: 2vw;
 }
 .logo:hover {
-
+ color: #E07778;
+ text-shadow: 1px .5px #77CBF0;
 }
 
 
@@ -79,27 +82,28 @@ a.nav-link:hover {
   }
 }
 @media (max-width: 992px) {
-    .container_img {
-      background-image: url(images/doggo.jpg);
-    }
-    .menu {
-      position: absolute;
-      background: transparent;
-      font-size: 1.75rem;
-      top: 1vh;
-      right: 1vw;
-    }
-    .menu:hover {
-      color: #77CBF0;
-    }
-    #desktop-slider, .desktop-heading {
-      display: none;
-    }
-  }
-
-@media (max-width: 768px) {
-
+/*-- Nagated Styles --*/
+#desktop-slider, .site-title, .desktop-nav {
+  display: none;
 }
+  .container_img {
+    background-image: url(/images/wedding.jpg);
+  }
+  .menu {
+    position: absolute;
+    background: transparent;
+    font-size: 1.75rem;
+    top: 1vh;
+    right: 1vw;
+  }
+  .menu:hover {
+    color: #77CBF0;
+  }
+  #desktop-slider, .desktop-heading {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
 
 }
