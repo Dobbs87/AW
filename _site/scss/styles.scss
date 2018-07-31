@@ -22,8 +22,8 @@ h3 {
   color: #E07778;
   text-shadow: 1.5px 1px #77CBF0;
   position: absolute;
-  top: .5vh;
-  left: .5vw;
+  top: 2.5vh;
+  left: 1.5vw;
 }
 
 /*-- Carousel Styles --*/
@@ -50,12 +50,30 @@ a.nav-link {
 a.nav-link:hover {
   color: #77CBF0;
 }
+.open-menu {
+  position: relative;
+  top: -85vh;
+  left: 2vw;
+  font-size: 1.5em;
+  background: transparent;
+  border: 0;
+}
+.card-body.menu {
+  display: none;
+}
 
-
+/*-- Intro section Styles --*/
+.intro {
+  margin-top: 5vh;
+  padding: 0 10vw;
+}
 
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
-
+  // .open-menu {
+  //   position: absolute;
+  //   top: 0;
+  // }
 
   /*-- Negated Elements --*/
   .logo {
@@ -75,34 +93,52 @@ a.nav-link:hover {
   }
 }
 @media screen and (max-width: 992px) {
-
   .logo {
-    font-family: 'Altero-Regular', sans-serif;
-    font-size: 3rem;
-    letter-spacing: -0.55rem;
-    color: #77CBF0;
-    text-shadow: 1px .5px #E07778;
-    position: absolute;
-    top: 2vh;
-    left: 4vw;
+    display: none;
   }
-  .logo:hover {
-   color: #E07778;
-   text-shadow: 1px .5px #77CBF0;
+  #desktop-nav {
+    display: none;
+  }
+  span.hamburger {
+    display: none;
   }
   .menu {
-    position: absolute;
-    color: #77CBF0;
-    text-shadow: 1px 1px #E07778;
-    background: transparent;
-    font-size: 1.75rem;
-    top: 1vh;
-    right: 1vw;
+    display: none;
   }
-  .menu:hover {
-   color: #E07778;
-   text-shadow: 1px 1px #77CBF0;
+  .mobile-img {
+    display: none;
   }
+
+
+
+
+  // .logo {
+  //   font-family: 'Altero-Regular', sans-serif;
+  //   font-size: 3rem;
+  //   letter-spacing: -0.55rem;
+  //   color: #77CBF0;
+  //   text-shadow: 1px .5px #E07778;
+  //   position: absolute;
+  //   top: 2vh;
+  //   left: 4vw;
+  // }
+  // .logo:hover {
+  //  color: #E07778;
+  //  text-shadow: 1px .5px #77CBF0;
+  // }
+  // .menu {
+  //   position: absolute;
+  //   color: #77CBF0;
+  //   text-shadow: 1px 1px #E07778;
+  //   background: transparent;
+  //   font-size: 1.75rem;
+  //   top: 1vh;
+  //   right: 1vw;
+  // }
+  // .menu:hover {
+  //  color: #E07778;
+  //  text-shadow: 1px 1px #77CBF0;
+  // }
 
 
   #desktop-slider, .desktop-heading, .site-title, .desktop-nav {
@@ -111,9 +147,9 @@ a.nav-link:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .site-title, .desktop-nav {
-    display: none;
-  }
+  // .site-title, .desktop-nav {
+  //   display: none;
+  // }
 }
 
 @media (max-width: 576px) {
