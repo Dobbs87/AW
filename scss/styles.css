@@ -1,7 +1,22 @@
 /*-- Global Styles --*/
-@fontface {
+@font-face {
   font-family: 'Altero-Regular';
-  src: url(Altero-Regular.otf); }
+  src: url(../fonts/Altero-Regular.otf); }
+@font-face {
+  font-family: "manrope-light";
+  src: url("manrope-light.woff2") format("woff2"), url("manrope-light.woff") format("woff"), url("manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "manrope-regular";
+  src: url("manrope-regular.woff2") format("woff2"), url("manrope-regular.woff") format("woff"), url("manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "manrope-bold";
+  src: url("manrope-bold.woff2") format("woff2"), url("manrope-bold.woff") format("woff"), url("manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
 a {
   text-decoration: none; }
 
@@ -11,12 +26,14 @@ h3 {
   color: #E07778;
   text-shadow: 1.5px 1px #77CBF0; }
 
+p {
+  font-family: 'manrope-light', sans-serif; }
+
 /*-- Title Styles --*/
 .site-title {
   font-family: 'Altero-Regular', sans-serif;
-  font-size: 2em;
+  font-size: 2.5rem;
   color: #E07778;
-  text-shadow: 1.5px 1px #77CBF0;
   position: absolute;
   top: 2.5vh;
   left: 1.5vw; }
@@ -31,18 +48,40 @@ h3 {
   height: 102vh; }
 
 /*-- Navigation Styles --*/
-.desktop-nav {
+.menu {
   position: absolute;
-  top: 0;
-  right: 0;
-  display: inline;
-  font-family: 'Altero-Regular'; }
+  color: #77CBF0;
+  text-shadow: 1px 1px #E07778;
+  background: transparent;
+  font-size: 2rem;
+  top: 1vh;
+  right: 1vw;
+  z-index: 10; }
+
+.menu:hover {
+  color: #E07778;
+  text-shadow: 1px 1px #77CBF0; }
+
+.menu-open {
+  position: absolute;
+  z-index: 1;
+  top: 8vh;
+  left: -2vw;
+  font-size: 1.5rem;
+  margin-top: 0; }
+
+.card-body {
+  padding: 0; }
+
+.desktop-nav {
+  display: none; }
 
 a.nav-link {
-  color: #E07778; }
+  color: #E07778;
+  padding: .5rem 2.75rem; }
 
 a.nav-link:hover {
-  color: #77CBF0; }
+  text-transform: uppercase; }
 
 .open-menu {
   position: relative;
@@ -55,46 +94,83 @@ a.nav-link:hover {
 .card-body.menu {
   display: none; }
 
-/*-- Intro section Styles --*/
+/*-- Hero section Styles --*/
 .intro {
-  margin-top: 5vh;
-  padding: 0 10vw; }
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  padding: 0 15vw; }
+
+.intro h3 {
+  font-size: 3rem; }
+
+/*-- About section Styles --*/
+.about {
+  background-color: #E07778; }
+
+.about h2 {
+  font-family: 'Altero-Regular', sans-serif;
+  color: #25C3D6;
+  position: relative;
+  top: 4vh;
+  left: 2vw; }
+
+.about p {
+  margin: 5vh; }
+
+.self {
+  background-image: url("../images/self.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh; }
+
+/*-- Gallery Styles --*/
+.gallery_1 {
+  background-image: url("/images/wedding.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh; }
+
+.gallery_font {
+  position: absolute;
+  top: 25%;
+  left: 2.5vw;
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 5rem;
+  color: #E07778;
+  text-shadow: 1.5px 1px #77CBF0; }
+
+.gallery_font:hover {
+  color: #77CBF0;
+  text-shadow: 1px .5px #E07778; }
 
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
+  .open-menu {
+    position: absolute;
+    top: 0; }
+
   /*-- Negated Elements --*/
   .logo {
-    display: none; }
-
-  #desktop-nav {
-    display: none; }
-
-  span.hamburger {
-    display: none; }
-
-  .menu {
     display: none; }
 
   .mobile-img {
     display: none; } }
 @media screen and (max-width: 992px) {
   .logo {
-    display: none; }
+    font-family: 'Altero-Regular', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.55rem;
+    color: #77CBF0;
+    text-shadow: 1px .5px #E07778;
+    position: absolute;
+    top: 2vh;
+    left: 4vw; }
 
-  #desktop-nav {
-    display: none; }
-
-  span.hamburger {
-    display: none; }
-
-  .menu {
-    display: none; }
-
-  .mobile-img {
-    display: none; }
-
-  #desktop-slider, .desktop-heading, .site-title, .desktop-nav {
-    display: none; } }
+  .logo:hover {
+    color: #E07778;
+    text-shadow: 1px .5px #77CBF0; } }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap

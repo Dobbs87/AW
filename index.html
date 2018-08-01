@@ -18,9 +18,8 @@
   <button type="button" class="btn btn-outline menu" data-toggle="collapse" data-target="#nav-burger" aria-expanded="false" aria-controls="nav-burger"><span class="hamburger"><i class="fas fa-bars"></i></span></button>
 </div>
 <div class="collapse" id="nav-burger">
-  <div class="card card-body open-menu">
-    <button type="button" class="btn btn-outline menu" data-toggle="collapse" data-target="#nav-burger" aria-expanded="false" aria-controls="nav-burger"><span class="hamburger"><i class="fas fa-bars"></i></span></button>
-    <nav class="nav flex-column">
+  <div class="card card-body">
+    <nav class="nav flex-column menu-open">
       <a class="nav-link active" href="#!">Home</a>
       <a class="nav-link" href="#!">About</a>
       <a class="nav-link" href="#!">Gallery</a>
@@ -35,13 +34,13 @@
 <div class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner" id="desktop-slider" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block w-100 slide_1" src="images/wedding.jpg" alt="first slide">
+      <img class="d-block w-100 slide_1" src="images/wedding_2.jpg" alt="first slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100 slide_2" src="images/grad.jpg" alt="second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 slide_3" src="images/kids.jpg" alt="third slide">
+      <img class="d-block w-100 slide_3" src="images/engagment.jpg" alt="third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#desktop-slider" role="button" data-slide="prev">
@@ -61,7 +60,7 @@
 
 <!-- DESKTOP NAVIGATION -->
 
-<ul class="nav justify-content-end desktop-nav">
+<ul class="nav justify-content-center desktop-nav">
   <li class="nav-item">
     <a class="nav-link active" href="#!">HOME</a>
   </li>
@@ -76,28 +75,44 @@
   </li>
 </ul>
 
-<!-- Who we Are -->
+<!-- Hero Section -->
 <div class="container-fluid text-center intro">
   <h3>we meet no ordinary people</h3>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
+<!-- About Section -->
+<div class="container-fluid about">
+  <div class="row">
+    <div class="col-5">
+      <h2 class="display-3">about me</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <button type="button" class="btn btn-secondary" name="button">Let's Connect</button>
+    </div>
+    <div class="col-7 self">
+
+    </div>
+  </div>
+</div>
 
 <!-- Gallery -->
-<div class="container-fluid text-center">
-  <h3>portfolio</h3>
-  <div class="row text-center">
-    <div class="col-7" style="background-color:teal; min-height:450px;">
-      <a href="#"><p class="lead"></p></a>
+<div class="container-fluid text-center portfolio">
+  <div class="row">
+    <div class="col-12 img-fluid gallery_1">
+      <a href="#"><p class="gallery_font">weddings</p></a>
     </div>
-    <div class="col-5" style="background-color:tomato; min-height:450px;">
-      <a href="#"><p class="lead"></p></a>
+    <div class="col-12 img-fluid gallery_1">
+      <a href="#"><p class="gallery_font">engagments</p></a>
     </div>
-    <div class="col-5 w-100" style="background-color:tomato; min-height:450px;">
-      <a href="#"><p class="lead"></p></a>
+    <div class="col-12 img-fluid gallery_1">
+      <a href="#"><p class="gallery_font">lifestyle</p></a>
     </div>
-    <div class="col-7" style="background-color:teal; min-height:450px;">
-      <a href="#"><p class="lead"></p></a>
+    <div class="col-12 img-fluid gallery_1">
+      <a href="#"><p class="gallery_font">portraits</p></a>
+    </div>
+    <div class="col-12 img-fluid gallery_1">
+      <a href="#"><p class="gallery_font">automotive</p></a>
     </div>
   </div>
 </div>
