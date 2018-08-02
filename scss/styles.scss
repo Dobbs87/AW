@@ -120,9 +120,13 @@ a.nav-link:hover {
 
 /*-- Hero section Styles --*/
 .intro {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  padding: 0 15vw;
+  background-image: url('/images/Grain-Texture-08.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // padding-top: 15vh;
+  // padding-bottom: 15vh;
+  padding: 15vh 16vw;
 }
 .intro h3 {
   font-size: 3rem;
@@ -151,27 +155,47 @@ a.nav-link:hover {
   height: 75vh;
 }
 
+/*-- Parallax Bitch --*/
+// #parallax {
+//   background-image: url('/images/wedding.jpg');
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 40vh;
+// }
+
 /*-- Gallery Styles --*/
+.portfolio {
+  padding: 0;
+  box-sizing: content-box;
+}
 .gallery_1 {
-  background-image: url('/images/wedding.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #E07778;
+}
+.gallery_2 {
+  background-color: #E6B971;
+}
+.gallery_3 {
+  background-color: #7EDAD4;
+}
+.gallery_4 {
+  background-color: #EAEBEC;
+}
+.gallery_5 {
+  background-color: #7EC8F0;
+}
+.gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5 {
   min-height: 80vh;
 }
-.gallery_font {
-  position: absolute;
-  top: 25%;
-  left: 2.5vw;
+.weddings_font {
+  position: relative;
+  top: 2vh;
+  left: 2vw;
   font-family: 'Altero-Regular', sans-serif;
-  font-size: 5rem;
   color: #E07778;
-  text-shadow: 1.5px 1px #77CBF0;
 }
-.gallery_font:hover {
-  color: #77CBF0;
-  text-shadow: 1px .5px #E07778;
-}
+
 
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
