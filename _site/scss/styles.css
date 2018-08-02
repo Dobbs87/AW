@@ -126,7 +126,6 @@ a.nav-link:hover {
   background-size: cover;
   height: 75vh; }
 
-/*-- Parallax Bitch --*/
 /*-- Gallery Styles --*/
 .portfolio {
   padding: 0;
@@ -148,14 +147,71 @@ a.nav-link:hover {
   background-color: #7EC8F0; }
 
 .gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5 {
-  min-height: 80vh; }
+  min-height: 80vh;
+  position: relative; }
+
+/*-- Gallery Font Styles --*/
+.weddings_font, .engagment_font, .lifestyle_font, .automotive_font, .commercial_font {
+  position: absolute;
+  transform: rotate(90deg);
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 5em;
+  z-index: 1; }
 
 .weddings_font {
-  position: relative;
-  top: 2vh;
-  left: 2vw;
-  font-family: 'Altero-Regular', sans-serif;
-  color: #E07778; }
+  top: 25vh;
+  left: -16vw; }
+
+.engagment_font {
+  top: 30vh;
+  left: -18vw; }
+
+.lifestyle_font {
+  top: 24.5vh;
+  left: -15vw; }
+
+.automotive_font {
+  top: 31vh;
+  left: -19vw; }
+
+.commercial_font {
+  top: 22vh;
+  left: -14vw; }
+
+/*-- Gallery Hover Styles --*/
+.gallery_1:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_2:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_3:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_4:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_5:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_1:hover p, .gallery_2:hover p, .gallery_3:hover p, .gallery_4:hover p, .gallery_5:hover p {
+  color: transparent;
+  transition: 1s ease; }
 
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
