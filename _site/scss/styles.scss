@@ -126,7 +126,7 @@ a.nav-link:hover {
   background-size: cover;
   // padding-top: 15vh;
   // padding-bottom: 15vh;
-  padding: 15vh 16vw;
+  padding: 20vh 16vw;
 }
 .intro h3 {
   font-size: 3rem;
@@ -243,69 +243,44 @@ a.nav-link:hover {
   transition: 1s ease;
 }
 
-
-
-/*--- DATEDROPPER STYLES ---*/
-div.datedropper.my-style {
-  border-radius: 8px;
-  width: 180px;
+/*-- Connect Styles --*/
+.connect {
+  background-image: url('/images/mill.gif');
+  background-position: 50% -65%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh;
 }
-div.datedropper.my-style .picker {
-  border-radius: 8px;
-  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+.social {
+  // background-color: #E07778;
 }
-div.datedropper.my-style .pick-l {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+.social h3 {
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  padding-left: 5vw;
+  font-size: 3rem;
+  text-shadow: none;
 }
-div.datedropper.my-style:before,
-div.datedropper.my-style .pick-submit,
-div.datedropper.my-style .pick-lg-b .pick-sl:before,
-div.datedropper.my-style .pick-m,
-div.datedropper.my-style .pick-lg-h {
-  background-color: #fd4741;
+.ze-form {
+  margin-left: 5vw;
 }
-div.datedropper.my-style .pick-y.pick-jump,
-div.datedropper.my-style .pick li span,
-div.datedropper.my-style .pick-lg-b .pick-wke,
-div.datedropper.my-style .pick-btn {
-  color: #fd4741;
+.form-group {
+  padding-top: 2.5vh;
 }
-div.datedropper.my-style .picker,
-div.datedropper.my-style .pick-l {
-  background-color: #FFF;
+.form-group input, .form-group textarea {
+  opacity: .90;
 }
-div.datedropper.my-style .picker,
-div.datedropper.my-style .pick-arw,
-div.datedropper.my-style .pick-l {
-  color: #4D4D4D;
+.form-control, .btn-send {
+  border-radius: 0;
+  border: 1px solid #7EC8F0;
+  background-color: #E8E9EB;
+  border-style: none;
+  padding: 1vh 2vw;
 }
-div.datedropper.my-style .pick-m,
-div.datedropper.my-style .pick-m .pick-arw,
-div.datedropper.my-style .pick-lg-h,
-div.datedropper.my-style .pick-lg-b .pick-sl,
-div.datedropper.my-style .pick-submit {
-  color: #FFF;
+.btn-send:hover {
+  background-color: #4ECDC4;
+  color: #E8E9EB;
 }
-div.datedropper.my-style.picker-tiny:before,
-div.datedropper.my-style.picker-tiny .pick-m {
-  background-color: #FFF;
-}
-div.datedropper.my-style.picker-tiny .pick-m,
-div.datedropper.my-style.picker-tiny .pick-m .pick-arw {
-  color: #4D4D4D;
-}
-div.datedropper.my-style.picker-lkd .pick-submit {
-  background-color: #FFF;
-  color: #4D4D4D;
-}
-
-
-
-
-
-
-
 
 
 /*---Media Queries --*/
