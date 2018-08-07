@@ -1,0 +1,294 @@
+/*-- Global Styles --*/
+@font-face {
+  font-family: 'Altero-Regular';
+  src: url(../fonts/Altero-Regular.otf); }
+@font-face {
+  font-family: "manrope-light";
+  src: url("manrope-light.woff2") format("woff2"), url("manrope-light.woff") format("woff"), url("manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "manrope-regular";
+  src: url("manrope-regular.woff2") format("woff2"), url("manrope-regular.woff") format("woff"), url("manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "manrope-bold";
+  src: url("manrope-bold.woff2") format("woff2"), url("manrope-bold.woff") format("woff"), url("manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+a {
+  text-decoration: none; }
+
+h3 {
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 1.5rem;
+  color: #E07778;
+  text-shadow: 1.5px 1px #77CBF0; }
+
+p {
+  font-family: 'manrope-light', sans-serif; }
+
+/*-- Title Styles --*/
+.site-title {
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 2.5rem;
+  color: #E07778;
+  position: absolute;
+  top: 2.5vh;
+  left: 1.5vw; }
+
+/*-- Carousel Styles --*/
+#desktop-slider {
+  position: relative;
+  height: 102vh; }
+
+.carousel-item > .slide_1, .slide_2, .slide_3 {
+  object-fit: cover;
+  height: 102vh; }
+
+/*-- Navigation Styles --*/
+.menu {
+  position: absolute;
+  color: #77CBF0;
+  text-shadow: 1px 1px #E07778;
+  background: transparent;
+  font-size: 2rem;
+  top: 1vh;
+  right: 1vw;
+  z-index: 10; }
+
+.menu:hover {
+  color: #E07778;
+  text-shadow: 1px 1px #77CBF0; }
+
+.menu-open {
+  position: absolute;
+  z-index: 1;
+  top: 8vh;
+  left: -2vw;
+  font-size: 1.5rem;
+  margin-top: 0; }
+
+.card-body {
+  padding: 0; }
+
+.desktop-nav {
+  display: none; }
+
+a.nav-link {
+  color: #E07778;
+  padding: .5rem 2.75rem; }
+
+a.nav-link:hover {
+  text-transform: uppercase; }
+
+.open-menu {
+  position: relative;
+  top: -85vh;
+  left: 2vw;
+  font-size: 1.5em;
+  background: transparent;
+  border: 0; }
+
+.card-body.menu {
+  display: none; }
+
+/*-- Hero section Styles --*/
+.intro {
+  background-image: url("/images/Grain-Texture-08.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vh 16vw; }
+
+.intro h3 {
+  font-size: 3rem; }
+
+/*-- About section Styles --*/
+.about {
+  background-color: #E07778; }
+
+.about h2 {
+  font-family: 'Altero-Regular', sans-serif;
+  color: #25C3D6;
+  position: relative;
+  top: 4vh;
+  left: 2vw; }
+
+.about p {
+  margin: 5vh; }
+
+.self {
+  background-image: url("../images/self.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh; }
+
+/*-- Gallery Styles --*/
+.portfolio {
+  padding: 0;
+  box-sizing: content-box; }
+
+.gallery_1 {
+  background-color: #E07778; }
+
+.gallery_2 {
+  background-color: #E6B971; }
+
+.gallery_3 {
+  background-color: #7EDAD4; }
+
+.gallery_4 {
+  background-color: #EAEBEC; }
+
+.gallery_5 {
+  background-color: #7EC8F0; }
+
+.gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5 {
+  min-height: 80vh;
+  position: relative; }
+
+/*-- Gallery Font Styles --*/
+.weddings_font, .engagment_font, .lifestyle_font, .automotive_font, .commercial_font {
+  position: absolute;
+  transform: rotate(90deg);
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 5em;
+  z-index: 1; }
+
+.weddings_font {
+  top: 25vh;
+  left: -16vw; }
+
+.engagment_font {
+  top: 30vh;
+  left: -18vw; }
+
+.lifestyle_font {
+  top: 24.5vh;
+  left: -15vw; }
+
+.automotive_font {
+  top: 31vh;
+  left: -19vw; }
+
+.commercial_font {
+  top: 22vh;
+  left: -14vw; }
+
+/*-- Gallery Hover Styles --*/
+.gallery_1:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_2:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_3:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_4:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_5:hover {
+  background-image: url("/images/wtd.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 3s ease; }
+
+.gallery_1:hover p, .gallery_2:hover p, .gallery_3:hover p, .gallery_4:hover p, .gallery_5:hover p {
+  color: transparent;
+  transition: 1s ease; }
+
+/*-- Connect Styles --*/
+.connect {
+  background-image: url("/images/mill.gif");
+  background-position: 50% -65%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh; }
+
+.social h3 {
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  padding-left: 5vw;
+  font-size: 3rem;
+  text-shadow: none; }
+
+.ze-form {
+  margin-left: 5vw; }
+
+.form-group {
+  padding-top: 2.5vh; }
+
+.form-group input, .form-group textarea {
+  opacity: .90; }
+
+.form-control, .btn-send {
+  border-radius: 0;
+  border: 1px solid #7EC8F0;
+  background-color: #E8E9EB;
+  border-style: none;
+  padding: 1vh 2vw; }
+
+.btn-send:hover {
+  background-color: #4ECDC4;
+  color: #E8E9EB; }
+
+/*---Media Queries --*/
+@media screen and (min-width: 992px) {
+  .open-menu {
+    position: absolute;
+    top: 0; }
+
+  /*-- Negated Elements --*/
+  .logo {
+    display: none; }
+
+  .mobile-img {
+    display: none; } }
+@media screen and (max-width: 992px) {
+  .logo {
+    font-family: 'Altero-Regular', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.55rem;
+    color: #77CBF0;
+    text-shadow: 1px .5px #E07778;
+    position: absolute;
+    top: 2vh;
+    left: 4vw; }
+
+  .logo:hover {
+    color: #E07778;
+    text-shadow: 1px .5px #77CBF0; } }
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/*# sourceMappingURL=styles.css.map */
