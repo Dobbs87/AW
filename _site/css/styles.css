@@ -215,15 +215,15 @@ a.nav-link:hover {
 
 /*-- Connect Styles --*/
 .connect {
-  background-image: url("/images/mill.gif");
+  background-image: url("../images/mill.gif");
   background-position: 50% -65%;
   background-attachment: fixed;
   background-size: cover;
   height: 85vh; }
 
 .social h3 {
-  margin-top: 2vh;
-  margin-bottom: 10vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   padding-left: 5vw;
   font-size: 3rem;
   text-shadow: none; }
