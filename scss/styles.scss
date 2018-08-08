@@ -151,18 +151,18 @@ a.nav-link:hover {
 
 /*-- Gallery Font Styles --*/
 .weddings_font, .engagment_font, .lifestyle_font, .automotive_font, .commercial_font{
-  // position: absolute;
-  // transform: rotate(90deg);
-  // font-family: 'Altero-Regular', sans-serif;
-  // font-size: 5rem;
-  // z-index: 1;
+  position: absolute;
+  transform: rotate(90deg);
+  font-family: 'Altero-Regular', sans-serif;
+  font-size: 5rem;
+  z-index: 1;
 }
-// .engagment_font, .automotive_font {
-//   left: -5vw;
-// }
-// .weddings_font, .lifestyle_font, .commercial_font {
-//   left: -1vw;
-// }
+.engagment_font, .automotive_font {
+  left: -5vw;
+}
+.weddings_font, .lifestyle_font, .commercial_font {
+  left: -2.5vw;
+}
 // .weddings_font {
 //   top: 25vh;
 //   left: -13vw;
