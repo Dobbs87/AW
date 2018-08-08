@@ -86,11 +86,11 @@ p {
 .menu-open {
   position: relative;
   z-index: 1;
-  top: 12vh;
+  top: 8vh;
   left: -1vw;
   font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 12vh;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
 }
 .card-body {
   padding: 0;
@@ -106,7 +106,9 @@ a.nav-link:hover {
   color: #77CBF0;
 }
 
-
+.card-body.menu {
+  display: none;
+}
 
 /*-- Hero section Styles --*/
 .intro {
@@ -117,11 +119,34 @@ a.nav-link:hover {
   padding: 20vh 16vw;
 }
 .intro h3 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .intro p {
+  font-size: 1.75rem;
   max-width: 90%;
-  font-size: 2.5rem;
+}
+
+/*-- About section Styles --*/
+.about {
+  background-color: #E07778;
+}
+
+.about h2{
+  font-family: 'Altero-Regular', sans-serif;
+  color: #25C3D6;
+  position: relative;
+  top: 4vh;
+  left: 2vw;
+}
+.about p {
+  margin: 5vh;
+}
+.self {
+  background-image: url('../images/self.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
 }
 
 /*-- Gallery Styles --*/
@@ -148,42 +173,34 @@ a.nav-link:hover {
   min-height: 80vh;
   position: relative;
 }
-
 /*-- Gallery Font Styles --*/
 .weddings_font, .engagment_font, .lifestyle_font, .automotive_font, .commercial_font{
   position: absolute;
   transform: rotate(90deg);
   font-family: 'Altero-Regular', sans-serif;
-  font-size: 5rem;
+  font-size: 5em;
   z-index: 1;
 }
-.engagment_font, .automotive_font {
-  left: -5vw;
+.weddings_font {
+  top: 25vh;
+  left: -13vw;
 }
-.weddings_font, .lifestyle_font, .commercial_font {
-  left: -2.5vw;
+.engagment_font {
+  top: 30vh;
+  left: -15vw;
 }
-// .weddings_font {
-//   top: 25vh;
-//   left: -13vw;
-// }
-// .engagment_font {
-//   top: 30vh;
-//   left: -15vw;
-// }
-// .lifestyle_font {
-//   top: 24.5vh;
-//   left: -12vw;
-// }
-// .automotive_font {
-//   top: 31vh;
-//   left: -16vw;
-// }
-// .commercial_font {
-//   top: 22vh;
-//   left: -11vw;
-// }
-
+.lifestyle_font {
+  top: 24.5vh;
+  left: -12vw;
+}
+.automotive_font {
+  top: 31vh;
+  left: -16vw;
+}
+.commercial_font {
+  top: 22vh;
+  left: -11vw;
+}
 /*-- Gallery Hover Styles --*/
 .gallery_1:hover {
   background-image: url('/images/wtd.jpg');
@@ -218,29 +235,6 @@ a.nav-link:hover {
 .gallery_1:hover p, .gallery_2:hover p, .gallery_3:hover p, .gallery_4:hover p, .gallery_5:hover p{
   color: transparent;
   transition: 1s ease;
-}
-
-/*-- About section Styles --*/
-.about {
-  background-color: #E07778;
-}
-
-.about h2{
-  font-family: 'Altero-Regular', sans-serif;
-  color: #25C3D6;
-  position: relative;
-  top: 4vh;
-  left: 2vw;
-}
-.about p {
-  margin: 5vh;
-}
-.self {
-  background-image: url('../images/self.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
 }
 
 /*-- Connect Styles --*/
