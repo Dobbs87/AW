@@ -46,7 +46,7 @@ p {
 /*-- Title Styles --*/
 .site-title {
   font-family: 'Altero-Regular', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #E07778;
   position: absolute;
   top: 2.5vh;
@@ -64,10 +64,15 @@ p {
 }
 
 /*-- Navigation Styles --*/
+.menu-wrapper {
+  background-image: url('/images/Grain-Texture-08.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
 .menu {
   position: absolute;
-  color: #77CBF0;
-  text-shadow: 1px 1px #E07778;
+  color: #E07778;
+  text-shadow: 1px 1px #77CBF0;
   background: transparent;
   font-size: 2rem;
   top: 1vh;
@@ -75,48 +80,33 @@ p {
   z-index: 10;
 }
 .menu:hover {
- color: #E07778;
- text-shadow: 1px 1px #77CBF0;
+ color: #77CBF0;
+ text-shadow: 1px 1px #E07778;
 }
 .menu-open {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 8vh;
-  left: -2vw;
-  font-size: 1.5rem;
+  top: 12vh;
+  left: -1vw;
+  font-size: 2rem;
   margin-top: 0;
+  margin-bottom: 12vh;
 }
 .card-body {
   padding: 0;
 }
-.desktop-nav {
-  // font-family: 'Manrope', sans-serif;
-  // font-size: 2rem;
-  // color: #E07778;
-  // position: relative;
-  // margin-top: -12vh;
-  // border-top: 2px solid;
-  // border-bottom: 2px solid;
-  display: none;
-}
+
 a.nav-link {
+  font-family: 'Altero-Regular';
   color: #E07778;
   padding: .5rem 2.75rem;
 }
 a.nav-link:hover {
   text-transform: uppercase;
+  color: #77CBF0;
 }
-.open-menu {
-  position: relative;
-  top: -85vh;
-  left: 2vw;
-  font-size: 1.5em;
-  background: transparent;
-  border: 0;
-}
-.card-body.menu {
-  display: none;
-}
+
+
 
 /*-- Hero section Styles --*/
 .intro {
@@ -124,35 +114,14 @@ a.nav-link:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  // padding-top: 15vh;
-  // padding-bottom: 15vh;
   padding: 20vh 16vw;
 }
 .intro h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
-
-/*-- About section Styles --*/
-.about {
-  background-color: #E07778;
-}
-
-.about h2{
-  font-family: 'Altero-Regular', sans-serif;
-  color: #25C3D6;
-  position: relative;
-  top: 4vh;
-  left: 2vw;
-}
-.about p {
-  margin: 5vh;
-}
-.self {
-  background-image: url('../images/self.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
+.intro p {
+  max-width: 90%;
+  font-size: 2.5rem;
 }
 
 /*-- Gallery Styles --*/
@@ -179,34 +148,42 @@ a.nav-link:hover {
   min-height: 80vh;
   position: relative;
 }
+
 /*-- Gallery Font Styles --*/
 .weddings_font, .engagment_font, .lifestyle_font, .automotive_font, .commercial_font{
-  position: absolute;
-  transform: rotate(90deg);
-  font-family: 'Altero-Regular', sans-serif;
-  font-size: 5em;
-  z-index: 1;
+  // position: absolute;
+  // transform: rotate(90deg);
+  // font-family: 'Altero-Regular', sans-serif;
+  // font-size: 5rem;
+  // z-index: 1;
 }
-.weddings_font {
-  top: 25vh;
-  left: -16vw;
-}
-.engagment_font {
-  top: 30vh;
-  left: -18vw;
-}
-.lifestyle_font {
-  top: 24.5vh;
-  left: -15vw;
-}
-.automotive_font {
-  top: 31vh;
-  left: -19vw;
-}
-.commercial_font {
-  top: 22vh;
-  left: -14vw;
-}
+// .engagment_font, .automotive_font {
+//   left: -5vw;
+// }
+// .weddings_font, .lifestyle_font, .commercial_font {
+//   left: -1vw;
+// }
+// .weddings_font {
+//   top: 25vh;
+//   left: -13vw;
+// }
+// .engagment_font {
+//   top: 30vh;
+//   left: -15vw;
+// }
+// .lifestyle_font {
+//   top: 24.5vh;
+//   left: -12vw;
+// }
+// .automotive_font {
+//   top: 31vh;
+//   left: -16vw;
+// }
+// .commercial_font {
+//   top: 22vh;
+//   left: -11vw;
+// }
+
 /*-- Gallery Hover Styles --*/
 .gallery_1:hover {
   background-image: url('/images/wtd.jpg');
@@ -241,6 +218,29 @@ a.nav-link:hover {
 .gallery_1:hover p, .gallery_2:hover p, .gallery_3:hover p, .gallery_4:hover p, .gallery_5:hover p{
   color: transparent;
   transition: 1s ease;
+}
+
+/*-- About section Styles --*/
+.about {
+  background-color: #E07778;
+}
+
+.about h2{
+  font-family: 'Altero-Regular', sans-serif;
+  color: #25C3D6;
+  position: relative;
+  top: 4vh;
+  left: 2vw;
+}
+.about p {
+  margin: 5vh;
+}
+.self {
+  background-image: url('../images/self.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
 }
 
 /*-- Connect Styles --*/
