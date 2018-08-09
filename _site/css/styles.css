@@ -104,7 +104,11 @@ a.nav-link:hover {
 
 .intro p {
   font-size: 1.75rem;
-  max-width: 90%; }
+  margin-top: 2.5vh;
+  margin-bottom: -5vh; }
+
+.lewis {
+  margin-left: 25vw; }
 
 /*-- Gallery Styles --*/
 .portfolio {
@@ -126,6 +130,11 @@ a.nav-link:hover {
 .gallery_5 {
   background-color: #7EC8F0; }
 
+.gallery_1 p, .gallery_2 p, .gallery_3 p, .gallery_4 p, .gallery_5 p {
+  color: black;
+  opacity: .55; }
+
+/*-- Card Styles --*/
 .card-group {
   height: 90vh; }
 
@@ -140,8 +149,9 @@ a.nav-link:hover {
   font-family: 'Altero-Regular', sans-serif;
   transform: rotate(90deg); }
 
-/*-- Gallery Font Styles --*/
-/*-- If nothing else we use this --*/
+.card a {
+  text-decoration: none; }
+
 /*-- Gallery Hover Styles --*/
 .gallery_1:hover {
   background-image: url("/images/wtd.jpg");
@@ -177,34 +187,12 @@ a.nav-link:hover {
   color: transparent;
   transition: 1s ease; }
 
-/*-- About section Styles --*/
-.about {
-  background-color: #E07778; }
-
-.about h2 {
-  font-family: 'Altero-Regular', sans-serif;
-  color: #25C3D6;
-  position: relative;
-  top: 4vh;
-  left: 2vw; }
-
-.about p {
-  margin: 5vh; }
-
-.self {
-  background-image: url("../images/self.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 75vh; }
-
 /*-- Connect Styles --*/
 .connect {
   background-image: url("../images/mill.gif");
-  background-position: 50% -65%;
+  background-position: 70% -65%;
   background-attachment: fixed;
-  background-size: cover;
-  height: 85vh; }
+  background-size: cover; }
 
 .social h3 {
   margin-top: 5vh;
