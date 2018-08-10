@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Flaskfullofcoffee/AW/issues"
   },
-  "homepage": "https://github.com/Flaskfullofcoffee/AW#readme"
+  "homepage": "https://github.com/Flaskfullofcoffee/AW#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
