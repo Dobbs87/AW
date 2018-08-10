@@ -225,9 +225,6 @@ a.nav-link:hover {
   background-color: #4ECDC4;
   color: #E8E9EB; }
 
-.testing {
-  width: 71.42857%; }
-
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
   .open-menu {
