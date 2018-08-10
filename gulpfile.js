@@ -1,6 +1,10 @@
 var gulp = require('gulp');
 
-gulp.task('hello', function(done) {
-  console.log('Hello there');
-  done();
-})
+var sass = require('gulp-sass');
+
+
+gulp.task('sass', function(){
+  return gulp.src('scss/styles.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('css'))
+});

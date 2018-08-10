@@ -2,21 +2,25 @@
 @font-face {
   font-family: 'Altero-Regular';
   src: url(../fonts/Altero-Regular.otf); }
+
 @font-face {
   font-family: "manrope-light";
   src: url("manrope-light.woff2") format("woff2"), url("manrope-light.woff") format("woff"), url("manrope-light.otf") format("truetype");
   font-style: normal;
   font-weight: 300; }
+
 @font-face {
   font-family: "manrope-regular";
   src: url("manrope-regular.woff2") format("woff2"), url("manrope-regular.woff") format("woff"), url("manrope-regular.otf") format("truetype");
   font-style: normal;
   font-weight: 400; }
+
 @font-face {
   font-family: "manrope-bold";
   src: url("manrope-bold.woff2") format("woff2"), url("manrope-bold.woff") format("woff"), url("manrope-bold.otf") format("truetype");
   font-style: normal;
   font-weight: 700; }
+
 a {
   text-decoration: none; }
 
@@ -221,18 +225,20 @@ a.nav-link:hover {
   background-color: #4ECDC4;
   color: #E8E9EB; }
 
+.testing {
+  width: 71.42857%; }
+
 /*---Media Queries --*/
 @media screen and (min-width: 992px) {
   .open-menu {
     position: absolute;
     top: 0; }
-
   /*-- Negated Elements --*/
   .logo {
     display: none; }
-
   .mobile-img {
     display: none; } }
+
 @media screen and (max-width: 992px) {
   .logo {
     font-family: 'Altero-Regular', sans-serif;
@@ -243,10 +249,10 @@ a.nav-link:hover {
     position: absolute;
     top: 2vh;
     left: 4vw; }
-
   .logo:hover {
     color: #E07778;
     text-shadow: 1px .5px #77CBF0; } }
+
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -263,5 +269,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-/*# sourceMappingURL=styles.css.map */
