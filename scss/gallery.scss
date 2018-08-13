@@ -1,3 +1,130 @@
-h1 {
-  color: orange;
+/*-- Global Styles --*/
+@font-face {
+  font-family: 'Altero-Regular';
+  src: url(../fonts/Altero-Regular.otf);
+}
+@font-face {
+  font-family: "manrope-light";
+  src: url("manrope-light.woff2") format("woff2"),
+  url("manrope-light.woff") format("woff"),
+  url("manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+/**
+ * ----------------------------------------
+ * animation ping
+ * ----------------------------------------
+ */
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+
+h1, h3 {
+  font-family: 'Altero-Regular', sans-serif;
+}
+
+/*-- Container Styles --*/
+body {
+  background-image: url('/images/Grain-Texture-08.png');
+  background-attachment: fixed;
+}
+
+/*-- Heading Styles --*/
+.heading {
+  font-size: 4rem;
+  margin-top: 2vh;
+  color: #E07778;
+  text-shadow: 1.5px 1px #77CBF0;
+}
+
+/*-- Card Styles --*/
+.row {
+  margin: 5vh 0;
+  padding: 5vh;
+  perspective: 800px;
+}
+.card {
+  position: relative;
+  height: 65vh;
+  width: 25vw;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1.5s; /* Safari and Chrome */
+  transition: transform 1.5s;
+}
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('/images/couple.jpg');
+  background-size: cover;
+  background-position: top;
+  backface-visibility: hidden;
+  z-index: 10;
+}
+.front:after {
+    position: absolute;
+    top: 60vh;
+    left: -.25vw;
+    height: 0;
+    width: 0;
+    border-bottom: 5vh solid white;
+    border-right: 5vh solid transparent;
+    content: '';
+	-webkit-animation: ping 1.5s ease-out infinite reverse both;
+	        animation: ping 1.5s ease-out infinite reverse both;
+}
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+  backface-visibility: hidden;
+  -ms-transform: rotateY(-180deg); /* IE 9 */
+  -webkit-transform: rotateY(-180deg); /* Safari Chrome */
+  transform: rotateY(-180deg);
+}
+.back h3 {
+  position: absolute;
+  top: 25vh;
+  left: 2vw;
+  font-size: 2rem;
+}
+.card:hover {
+  -ms-transform: rotateY(180deg); /* IE 9 */
+  -webkit-transform: rotateY(180deg); /* Safari Chrome */
+  transform: rotateY(180deg);
+  opacity: 100%;
 }
