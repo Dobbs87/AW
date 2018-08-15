@@ -36,6 +36,11 @@ p {
   font-family: "manrope-light", sans-serif;
 }
 
+/*-- Logo Styles --*/
+.logo {
+  display: none;
+}
+
 /*-- Title Styles --*/
 .site-title {
   font-family: "Altero-Regular", sans-serif;
@@ -187,35 +192,35 @@ a.nav-link:hover {
 
 /*-- Gallery Hover Styles --*/
 .gallery_1:hover {
-  background-image: url("/images/wtd.jpg");
+  background-image: url("/images/wedding_tab.jpg");
   background-position: center;
   background-size: cover;
   transition: 3s ease;
 }
 
 .gallery_2:hover {
-  background-image: url("/images/wtd.jpg");
+  background-image: url("/images/engagment_tab.jpg");
   background-position: center;
   background-size: cover;
   transition: 3s ease;
 }
 
 .gallery_3:hover {
-  background-image: url("/images/wtd.jpg");
+  background-image: url("/images/lifestyle_tab.jpg");
   background-position: center;
   background-size: cover;
   transition: 3s ease;
 }
 
 .gallery_4:hover {
-  background-image: url("/images/wtd.jpg");
+  background-image: url("/images/auto_tab.jpg");
   background-position: center;
   background-size: cover;
   transition: 3s ease;
 }
 
 .gallery_5:hover {
-  background-image: url("/images/wtd.jpg");
+  background-image: url("/images/comm_tab.jpg");
   background-position: center;
   background-size: cover;
   transition: 3s ease;
@@ -273,52 +278,24 @@ a.nav-link:hover {
 }
 
 /*---Media Queries --*/
-@media screen and (min-width: 992px) {
-  /*-- Disabled Elements --*/
-  .logo {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  .site-title {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  /*-- Title Styles --*/
-  .site-title {
-    font-size: 3rem;
-  }
-
-  .menu {
-    font-size: 2.5rem;
-  }
-
+@media screen and (max-width: 1500px) {
+  /*-- Navigation Styles --*/
   .menu-open {
-    font-size: 2rem;
+    left: -1.5vw;
+    font-size: 2.75rem;
   }
 
-  /*-- Hero section Styles --*/
+  /*-- Hero Styles --*/
   .intro {
-    background-image: url("/images/Grain-Texture-08.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 12vh 18vw;
+    padding: 15vh 16vw;
   }
 
   .intro h3 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .intro p {
-    font-size: 1.75rem;
-    margin-top: 1vh;
-    margin-bottom: -1vh;
-  }
-
-  .lewis {
-    margin-left: 25vw;
+    font-size: 1.5rem;
   }
 
   /*-- Card Styles --*/
@@ -327,18 +304,30 @@ a.nav-link:hover {
   }
 
   /*-- Connect Styles --*/
-  .connect {
-    height: 85vh;
-  }
-
   .connect h3 {
     font-size: 3.5rem;
   }
 
-  .connect p, .btn-send, label {
+  .social p, .btn-send, label {
     font-size: 1.5rem;
   }
 
+  /*-- Disabled Elements --*/
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+
+  .site-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*-- Title Styles --*/
   /*-- Disabled Elements --*/
 }
 /*
