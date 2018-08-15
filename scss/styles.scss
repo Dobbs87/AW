@@ -27,6 +27,9 @@
   font-style: normal;
   font-weight: 700;
 }
+* {
+  cursor: default;
+}
 
 a {
   text-decoration: none;
@@ -42,6 +45,7 @@ h3 {
 p {
   font-family: 'manrope-light', sans-serif;
 }
+
 /*-- Logo Styles --*/
 .logo {
   display: none;
@@ -290,13 +294,63 @@ a.nav-link:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .logo {
-    display: none;
+  /*-- Logo Styles --*/
+  .brand a {
+    font-size: 3rem;
+    display: flex;
+    top: .5vh;
+    left: 3vw;
   }
+  .logo {
+    font-family: 'Altero-Regular', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.55rem;
+    color: #77CBF0;
+    text-shadow: 1px .5px #E07778;
+    position: absolute;
+    top: 2vh;
+    left: 4vw;
+    z-index: 10;
+  }
+   .logo:hover {
+    color: #E07778;
+    text-shadow: 1px .5px #77CBF0;
+  }
+
+  /*-- Navigation Styles --*/
+  .menu {
+    font-size: 2rem;
+  }
+  .menu-open {
+    font-size: 1.75rem;
+    left: -2vw;
+  }
+  /*-- Hero Styles --*/
+  .intro h3{
+    font-size: 2.5rem;
+  }
+  .intro p {
+    font-size: 1.25rem;
+  }
+  /*-- Gallery Styles --*/
+  .card-text {
+    font-size: 3.5rem;
+  }
+  /*-- Connect Styles --*/
+  .connect {
+    height: 90vh;
+  }
+  .connect h3 {
+    font-size: 2.5rem;
+  }
+  .connect p, .btn-send, label {
+    font-size: 1rem;
+  }
+
+  /*-- Disabled Styles --*/
   .site-title {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 768px) {
