@@ -58,7 +58,7 @@ p {
 /*-- Carousel Styles --*/
 #desktop-slider {
   position: relative;
-  height: 102vh;
+  max-height: 102vh;
 }
 
 .carousel-item > .slide_1, .slide_2, .slide_3 {
@@ -173,8 +173,12 @@ a.nav-link:hover {
 }
 
 /*-- Card Styles --*/
+.portfolio {
+  max-height: 85vh;
+}
+
 .card-group {
-  height: 90vh;
+  height: 85vh;
 }
 
 .card {
@@ -191,6 +195,7 @@ a.nav-link:hover {
 }
 
 .card a {
+  align-self: center;
   text-decoration: none;
 }
 
@@ -321,10 +326,10 @@ a.nav-link:hover {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1150px) {
   /*-- Logo Styles --*/
   .brand a {
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     top: 0.5vh;
     left: 3vw;
@@ -367,8 +372,17 @@ a.nav-link:hover {
   }
 
   /*-- Gallery Styles --*/
+  .card-group {
+    max-height: 65vh;
+  }
+
   .card-text {
+    margin-top: 10vh;
     font-size: 3.5rem;
+  }
+
+  .card-text a {
+    align-self: center;
   }
 
   /*-- Connect Styles --*/
@@ -389,10 +403,21 @@ a.nav-link:hover {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  /*-- Title Styles --*/
-  /*-- Disabled Elements --*/
+@media screen and (max-width: 800px) {
+  .card-group {
+    max-height: 70vh;
+  }
+
+  .card-text a {
+    align-self: center;
+  }
+
+  .card-text {
+    margin-top: 5vh;
+    font-size: 3rem;
+  }
 }
+/*-- Disabled Elements --*/
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap

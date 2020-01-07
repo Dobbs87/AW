@@ -64,7 +64,7 @@ p {
 /*-- Carousel Styles --*/
 #desktop-slider {
   position: relative;
-  height: 102vh;
+  max-height: 102vh;
 }
 .carousel-item > .slide_1, .slide_2, .slide_3 {
   object-fit: cover;
@@ -164,21 +164,25 @@ a.nav-link:hover {
 }
 
 /*-- Card Styles --*/
+.portfolio {
+  max-height: 85vh;
+}
 .card-group {
-  height: 90vh;
+  height: 85vh;
 }
 .card {
   display: flex;
 }
 .card-text {
   white-space: nowrap;
-  overflow:visible;
+  overflow: visible;
   margin-top: 15vh;
   font-size: 6rem;
   font-family: 'Altero-Regular', sans-serif;
   transform: rotate(90deg);
 }
 .card a {
+  align-self: center;
   text-decoration: none;
 }
 
@@ -293,10 +297,10 @@ a.nav-link:hover {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1150px) {
   /*-- Logo Styles --*/
   .brand a {
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     top: .5vh;
     left: 3vw;
@@ -333,8 +337,15 @@ a.nav-link:hover {
     font-size: 1.25rem;
   }
   /*-- Gallery Styles --*/
+  .card-group {
+    max-height: 65vh;
+  }
   .card-text {
+    margin-top: 10vh;
     font-size: 3.5rem;
+  }
+  .card-text a {
+    align-self: center;
   }
   /*-- Connect Styles --*/
   .connect {
@@ -353,72 +364,23 @@ a.nav-link:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-    /*-- Title Styles --*/
-    // .site-title {
-    //   display: none;
-    // }
-    // .logo {
-    //   font-family: 'Altero-Regular', sans-serif;
-    //   font-size: 3rem;
-    //   letter-spacing: -0.55rem;
-    //   color: #77CBF0;
-    //   text-shadow: 1px .5px #E07778;
-    //   position: absolute;
-    //   top: 2vh;
-    //   left: 4vw;
-    //   z-index: 10;
-    // }
-    //  .logo:hover {
-    //   color: #E07778;
-    //   text-shadow: 1px .5px #77CBF0;
-    // }
-    // .menu {
-    //   font-size: 2.5rem;
-    // }
-    // .menu-open {
-    //   font-size: 2rem;
-    // }
-    //
-    // /*-- Hero section Styles --*/
-    // .intro {
-    //   background-image: url('/images/Grain-Texture-08.png');
-    //   background-attachment: fixed;
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   padding: 12vh 18vw;
-    // }
-    // .intro h3 {
-    //   font-size: 3rem;
-    // }
-    // .intro p {
-    //   font-size: 1.75rem;
-    //   margin-top: 1vh;
-    //   margin-bottom: -1vh;
-    // }
-    // .lewis {
-    //   margin-left: 25vw;
-    // }
-    //
-    // /*-- Card Styles --*/
-    // .card-text {
-    //   font-size: 4.5rem;
-    // }
-    //
-    // /*-- Connect Styles --*/
-    // .connect {
-    //   height: 85vh;
-    // }
-    // .connect h3 {
-    //   font-size: 3.5rem;
-    // }
-    // .connect p, .btn-send, label {
-    //   font-size: 1.5rem;
-    // }
+@media screen and (max-width: 800px) {
+  .card-group {
+    max-height: 70vh;
+  }
+  .card-text a{
+    align-self: center;
+  }
+  .card-text {
+    margin-top: 5vh;
+    font-size: 3rem;
+  }
+}
+// @media screen and (max-width: 768px)
+
 
     /*-- Disabled Elements --*/
 
-}
 
 @media (min-width: 576px) {
 
